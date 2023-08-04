@@ -1,0 +1,3703 @@
+{
+    "_id": {
+        "$oid": "647371031f8fd40057ff0967"
+    },
+    "active": true,
+    "position": {
+        "$numberInt": "0"
+    },
+    "referenceObjects": [],
+    "name": "11:11",
+    "dbname": "11:11LEBydu9qssaF9tcNYE6",
+    "sitename": "3572",
+    "designers": [
+        {
+            "accessType": {
+                "$numberInt": "1"
+            },
+            "_id": {
+                "$oid": "647371031f8fd40057ff0968"
+            },
+            "userId": "sirar.h@nooralhilal.com",
+            "username": "sirar.h@nooralhilal.com"
+        },
+        {
+            "accessType": {
+                "$numberInt": "1"
+            },
+            "userId": "admin@mail.com",
+            "username": "Anar",
+            "_id": {
+                "$oid": "647938c1ed6f8619f7b755b2"
+            }
+        },
+        {
+            "userId": "dynapage@outlook.com",
+            "username": "Kassim",
+            "accessType": {
+                "$numberInt": "1"
+            },
+            "_id": {
+                "$oid": "64793a0b9a21b2d23b6e4dd8"
+            }
+        }
+    ],
+    "teams": [
+        {
+            "accessType": {
+                "$numberInt": "4"
+            },
+            "_id": {
+                "$oid": "647371031f8fd40057ff0969"
+            },
+            "teamName": "Admins",
+            "users": [
+                {
+                    "_id": {
+                        "$oid": "647371031f8fd40057ff096a"
+                    },
+                    "userId": "sirar.h@nooralhilal.com",
+                    "username": "sirar.h@nooralhilal.com",
+                    "userpwd": "l44nSyBulLCg"
+                },
+                {
+                    "_id": {
+                        "$oid": "6477483027641e00576fc60c"
+                    },
+                    "username": "admin01",
+                    "userId": "admin1@email.net",
+                    "userpwd": "football"
+                }
+            ]
+        },
+        {
+            "accessType": {
+                "$numberInt": "4"
+            },
+            "_id": {
+                "$oid": "647371031f8fd40057ff096b"
+            },
+            "teamName": "Kitchen",
+            "users": [
+                {
+                    "_id": {
+                        "$oid": "6477469327641e00576fc603"
+                    },
+                    "username": "kitchen",
+                    "userId": "kitchen@e.c",
+                    "userpwd": "football"
+                }
+            ]
+        },
+        {
+            "accessType": {
+                "$numberInt": "4"
+            },
+            "_id": {
+                "$oid": "647371031f8fd40057ff096c"
+            },
+            "teamName": "Delivery",
+            "users": [
+                {
+                    "_id": {
+                        "$oid": "647746a927641e00576fc606"
+                    },
+                    "username": "delivery",
+                    "userId": "delivery@cc.c",
+                    "userpwd": "football"
+                }
+            ]
+        },
+        {
+            "accessType": {
+                "$numberInt": "4"
+            },
+            "_id": {
+                "$oid": "647371031f8fd40057ff096d"
+            },
+            "teamName": "Team3",
+            "users": []
+        },
+        {
+            "accessType": {
+                "$numberInt": "3"
+            },
+            "_id": {
+                "$oid": "647371031f8fd40057ff096e"
+            },
+            "teamName": "Team4",
+            "users": []
+        }
+    ],
+    "appforms": [
+        {
+            "_id": {
+                "$oid": "64751dc3fe67350057e30fed"
+            },
+            "showteamdata": true,
+            "showuserdata": false,
+            "name": "ingredientsform",
+            "label": "Ingredients Form",
+            "formDataRef": "Ingredients",
+            "formSchemaRef": {
+                "$oid": "64747f49f83e8b005748774b"
+            },
+            "formSchemaRefID": "",
+            "homepagemenu": true,
+            "sections": [
+                {
+                    "_id": {
+                        "$oid": "64751fb8fe67350057e3101d"
+                    },
+                    "position": {
+                        "$numberInt": "0"
+                    },
+                    "type": {
+                        "$numberInt": "9992"
+                    },
+                    "columns": [
+                        {
+                            "_id": {
+                                "$oid": "64751fb8fe67350057e3101e"
+                            },
+                            "position": {
+                                "$numberInt": "0"
+                            },
+                            "type": {
+                                "$numberInt": "0"
+                            },
+                            "label": "",
+                            "shapes": [
+                                {
+                                    "_id": {
+                                        "$oid": "64751fb8fe67350057e3101f"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "",
+                                    "valuefield": "",
+                                    "position": {
+                                        "$numberInt": "0"
+                                    },
+                                    "label": "Name",
+                                    "defaultvalue": "",
+                                    "multiline": false,
+                                    "required": true,
+                                    "validation": false,
+                                    "datafield": [],
+                                    "shapevalue": "name",
+                                    "type": {
+                                        "$numberInt": "301"
+                                    },
+                                    "gridcols": [],
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685397432327"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685397432327"
+                                        }
+                                    }
+                                }
+                            ],
+                            "createdAt": {
+                                "$date": {
+                                    "$numberLong": "1685397432337"
+                                }
+                            },
+                            "updatedAt": {
+                                "$date": {
+                                    "$numberLong": "1685397432337"
+                                }
+                            }
+                        },
+                        {
+                            "_id": {
+                                "$oid": "64751fb8fe67350057e31020"
+                            },
+                            "position": {
+                                "$numberInt": "1"
+                            },
+                            "type": {
+                                "$numberInt": "0"
+                            },
+                            "label": "",
+                            "shapes": [
+                                {
+                                    "_id": {
+                                        "$oid": "64751fb8fe67350057e31021"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "",
+                                    "valuefield": "",
+                                    "position": {
+                                        "$numberInt": "0"
+                                    },
+                                    "label": "Code",
+                                    "defaultvalue": "CD-",
+                                    "multiline": false,
+                                    "required": false,
+                                    "validation": false,
+                                    "datafield": [],
+                                    "shapevalue": "code",
+                                    "type": {
+                                        "$numberInt": "301"
+                                    },
+                                    "gridcols": [],
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685397432337"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685397432337"
+                                        }
+                                    }
+                                }
+                            ],
+                            "createdAt": {
+                                "$date": {
+                                    "$numberLong": "1685397432337"
+                                }
+                            },
+                            "updatedAt": {
+                                "$date": {
+                                    "$numberLong": "1685397432337"
+                                }
+                            }
+                        }
+                    ],
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685397432337"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685397432337"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "64751fb8fe67350057e31022"
+                    },
+                    "position": {
+                        "$numberInt": "1"
+                    },
+                    "type": {
+                        "$numberInt": "9992"
+                    },
+                    "columns": [
+                        {
+                            "_id": {
+                                "$oid": "64751fb8fe67350057e31023"
+                            },
+                            "position": {
+                                "$numberInt": "0"
+                            },
+                            "type": {
+                                "$numberInt": "0"
+                            },
+                            "label": "",
+                            "shapes": [
+                                {
+                                    "_id": {
+                                        "$oid": "64751fb8fe67350057e31024"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "",
+                                    "valuefield": "",
+                                    "position": {
+                                        "$numberInt": "0"
+                                    },
+                                    "label": "Protein",
+                                    "defaultvalue": "",
+                                    "required": false,
+                                    "validation": false,
+                                    "datafield": [],
+                                    "shapevalue": "protein",
+                                    "type": {
+                                        "$numberInt": "302"
+                                    },
+                                    "gridcols": [],
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685397432338"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685397432338"
+                                        }
+                                    }
+                                },
+                                {
+                                    "_id": {
+                                        "$oid": "64751fb8fe67350057e31025"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "",
+                                    "valuefield": "",
+                                    "position": {
+                                        "$numberInt": "1"
+                                    },
+                                    "label": "Fat",
+                                    "defaultvalue": "",
+                                    "required": false,
+                                    "validation": false,
+                                    "datafield": [],
+                                    "shapevalue": "fat",
+                                    "type": {
+                                        "$numberInt": "302"
+                                    },
+                                    "gridcols": [],
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685397432338"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685397432338"
+                                        }
+                                    }
+                                },
+                                {
+                                    "_id": {
+                                        "$oid": "64751fb8fe67350057e31026"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "",
+                                    "valuefield": "",
+                                    "position": {
+                                        "$numberInt": "2"
+                                    },
+                                    "label": "Sugar",
+                                    "defaultvalue": "",
+                                    "required": false,
+                                    "validation": false,
+                                    "datafield": [],
+                                    "shapevalue": "sugar",
+                                    "type": {
+                                        "$numberInt": "302"
+                                    },
+                                    "gridcols": [],
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685397432338"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685397432338"
+                                        }
+                                    }
+                                },
+                                {
+                                    "_id": {
+                                        "$oid": "64751fb8fe67350057e31027"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "",
+                                    "valuefield": "",
+                                    "position": {
+                                        "$numberInt": "3"
+                                    },
+                                    "label": "Carbohydrates",
+                                    "defaultvalue": "",
+                                    "required": false,
+                                    "validation": false,
+                                    "datafield": [],
+                                    "shapevalue": "carbohydrates",
+                                    "type": {
+                                        "$numberInt": "302"
+                                    },
+                                    "gridcols": [],
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685397432338"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685397432338"
+                                        }
+                                    }
+                                }
+                            ],
+                            "createdAt": {
+                                "$date": {
+                                    "$numberLong": "1685397432338"
+                                }
+                            },
+                            "updatedAt": {
+                                "$date": {
+                                    "$numberLong": "1685397432338"
+                                }
+                            }
+                        },
+                        {
+                            "_id": {
+                                "$oid": "64751fb8fe67350057e31028"
+                            },
+                            "position": {
+                                "$numberInt": "1"
+                            },
+                            "type": {
+                                "$numberInt": "0"
+                            },
+                            "label": "",
+                            "shapes": [
+                                {
+                                    "_id": {
+                                        "$oid": "64751fb8fe67350057e31029"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "",
+                                    "valuefield": "",
+                                    "position": {
+                                        "$numberInt": "0"
+                                    },
+                                    "label": "Grams",
+                                    "defaultvalue": "100",
+                                    "required": false,
+                                    "validation": false,
+                                    "datafield": [],
+                                    "shapevalue": "grams",
+                                    "type": {
+                                        "$numberInt": "302"
+                                    },
+                                    "gridcols": [],
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685397432338"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685397432338"
+                                        }
+                                    }
+                                },
+                                {
+                                    "_id": {
+                                        "$oid": "64751fb8fe67350057e3102a"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "",
+                                    "valuefield": "",
+                                    "position": {
+                                        "$numberInt": "1"
+                                    },
+                                    "label": "Calories",
+                                    "defaultvalue": "",
+                                    "required": false,
+                                    "validation": false,
+                                    "datafield": [],
+                                    "shapevalue": "calories",
+                                    "type": {
+                                        "$numberInt": "302"
+                                    },
+                                    "gridcols": [],
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685397432338"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685397432338"
+                                        }
+                                    }
+                                }
+                            ],
+                            "createdAt": {
+                                "$date": {
+                                    "$numberLong": "1685397432338"
+                                }
+                            },
+                            "updatedAt": {
+                                "$date": {
+                                    "$numberLong": "1685397432338"
+                                }
+                            }
+                        }
+                    ],
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685397432338"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685397432338"
+                        }
+                    }
+                }
+            ],
+            "formula": {
+                "formulaFld": "calories",
+                "formulaList": [
+                    {
+                        "key": {
+                            "$numberInt": "0"
+                        },
+                        "field": "fat",
+                        "operator": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "key": {
+                            "$numberInt": "1"
+                        },
+                        "field": "protein",
+                        "operator": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "key": {
+                            "$numberInt": "2"
+                        },
+                        "field": "sugar",
+                        "operator": {
+                            "$numberInt": "4"
+                        }
+                    },
+                    {
+                        "key": {
+                            "$numberInt": "3"
+                        },
+                        "field": "grams",
+                        "operator": {
+                            "$numberInt": "1"
+                        }
+                    }
+                ]
+            },
+            "t1": true,
+            "t2": false,
+            "t3": false,
+            "t4": false,
+            "t5": false,
+            "createdAt": {
+                "$date": {
+                    "$numberLong": "1685396931833"
+                }
+            },
+            "updatedAt": {
+                "$date": {
+                    "$numberLong": "1685396931833"
+                }
+            }
+        },
+        {
+            "_id": {
+                "$oid": "64753ad9442c3b5b80d6d3c0"
+            },
+            "showteamdata": false,
+            "showuserdata": false,
+            "name": "ingredientslist",
+            "label": "Ingredients List",
+            "formDataRef": "Ingredients",
+            "formSchemaRef": {
+                "$oid": "64747f49f83e8b005748774b"
+            },
+            "formSchemaRefID": "",
+            "homepagemenu": true,
+            "sections": [
+                {
+                    "_id": {
+                        "$oid": "64753aff442c3b5b80d6d3c8"
+                    },
+                    "position": {
+                        "$numberInt": "0"
+                    },
+                    "type": {
+                        "$numberInt": "9991"
+                    },
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685404415018"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685404415018"
+                        }
+                    },
+                    "columns": [
+                        {
+                            "_id": {
+                                "$oid": "64753aff442c3b5b80d6d3c9"
+                            },
+                            "position": {
+                                "$numberInt": "0"
+                            },
+                            "type": {
+                                "$numberInt": "0"
+                            },
+                            "label": "",
+                            "createdAt": {
+                                "$date": {
+                                    "$numberLong": "1685404415018"
+                                }
+                            },
+                            "updatedAt": {
+                                "$date": {
+                                    "$numberLong": "1685404415018"
+                                }
+                            },
+                            "shapes": [
+                                {
+                                    "_id": {
+                                        "$oid": "64753aff442c3b5b80d6d3ca"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "Ingredients",
+                                    "valuefield": "",
+                                    "position": {
+                                        "$numberInt": "0"
+                                    },
+                                    "label": "Ingredients",
+                                    "gridcols": [
+                                        {
+                                            "_id": {
+                                                "$oid": "64753aff442c3b5b80d6d3cb"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "301"
+                                            },
+                                            "shapevalue": "name",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": true,
+                                            "validation": false,
+                                            "label": "Name",
+                                            "dataref": "",
+                                            "datarefid": "64747f6cf83e8b005748774f",
+                                            "valuefield": "",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "",
+                                            "formattype": {
+                                                "$numberInt": "4"
+                                            },
+                                            "redirectto": "64751dc3fe67350057e30fed",
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685404415017"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685404415017"
+                                                }
+                                            },
+                                            "editable": true,
+                                            "width": {
+                                                "$numberInt": "190"
+                                            }
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "64753aff442c3b5b80d6d3cc"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "301"
+                                            },
+                                            "shapevalue": "code",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": false,
+                                            "validation": false,
+                                            "label": "Code",
+                                            "dataref": "",
+                                            "datarefid": "64747f8bf83e8b0057487753",
+                                            "valuefield": "",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "CD-",
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685404415017"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685404415017"
+                                                }
+                                            },
+                                            "editable": true,
+                                            "width": {
+                                                "$numberInt": "100"
+                                            }
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "64753aff442c3b5b80d6d3cd"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "302"
+                                            },
+                                            "shapevalue": "grams",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": false,
+                                            "validation": false,
+                                            "label": "Grams",
+                                            "dataref": "",
+                                            "datarefid": "64748117f83e8b005748776b",
+                                            "valuefield": "",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "100",
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685404415018"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685404415018"
+                                                }
+                                            },
+                                            "editable": true,
+                                            "width": {
+                                                "$numberInt": "100"
+                                            }
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "64753aff442c3b5b80d6d3ce"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "302"
+                                            },
+                                            "shapevalue": "calories",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": false,
+                                            "validation": false,
+                                            "label": "Calories",
+                                            "dataref": "",
+                                            "datarefid": "6474c096af82340057fdb70d",
+                                            "valuefield": "",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "",
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685404415018"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685404415018"
+                                                }
+                                            },
+                                            "editable": true,
+                                            "width": {
+                                                "$numberInt": "98"
+                                            }
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "64753b7b442c3b5b80d6d3e5"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "302"
+                                            },
+                                            "shapevalue": "carbohydrates",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": false,
+                                            "validation": false,
+                                            "label": "Carbohydrates",
+                                            "dataref": "",
+                                            "datarefid": "6474c082af82340057fdb704",
+                                            "valuefield": "",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "",
+                                            "editable": true,
+                                            "width": {
+                                                "$numberInt": "126"
+                                            },
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685404539837"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685404539837"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "64753b7b442c3b5b80d6d3e6"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "302"
+                                            },
+                                            "shapevalue": "protein",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": false,
+                                            "validation": false,
+                                            "label": "Protein",
+                                            "dataref": "",
+                                            "datarefid": "6474d60bd4afec00562297a6",
+                                            "valuefield": "",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "",
+                                            "editable": true,
+                                            "width": {
+                                                "$numberInt": "100"
+                                            },
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685404539837"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685404539837"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "64753b7b442c3b5b80d6d3e7"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "302"
+                                            },
+                                            "shapevalue": "fat",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": false,
+                                            "validation": false,
+                                            "label": "Fat",
+                                            "dataref": "",
+                                            "datarefid": "6474d618d4afec00562297ae",
+                                            "valuefield": "",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "",
+                                            "editable": true,
+                                            "width": {
+                                                "$numberInt": "100"
+                                            },
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685404539838"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685404539838"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "64753b7b442c3b5b80d6d3e8"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "302"
+                                            },
+                                            "shapevalue": "sugar",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": false,
+                                            "validation": false,
+                                            "label": "Sugar",
+                                            "dataref": "",
+                                            "datarefid": "6474d624d4afec00562297b6",
+                                            "valuefield": "",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "",
+                                            "editable": true,
+                                            "width": {
+                                                "$numberInt": "100"
+                                            },
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685404539838"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685404539838"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "hasdelete": true,
+                                    "hasnew": false,
+                                    "height": {
+                                        "$numberInt": "0"
+                                    },
+                                    "italic": false,
+                                    "layout": {
+                                        "$numberInt": "0"
+                                    },
+                                    "perpage": {
+                                        "$numberInt": "0"
+                                    },
+                                    "datarefid": "64747f49f83e8b005748774b",
+                                    "editable": true,
+                                    "modifieduser": false,
+                                    "modifiedteam": false,
+                                    "modifieddate": false,
+                                    "font": "",
+                                    "grid": "Grid+++++",
+                                    "shapevalue": "Data Grid",
+                                    "type": {
+                                        "$numberInt": "50"
+                                    },
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685404415018"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685404415018"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "formula": "",
+            "t1": true,
+            "t2": true,
+            "t3": false,
+            "t4": false,
+            "t5": false,
+            "createdAt": {
+                "$date": {
+                    "$numberLong": "1685404377864"
+                }
+            },
+            "updatedAt": {
+                "$date": {
+                    "$numberLong": "1685404377864"
+                }
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6475eff7442c3b5b80d6d41f"
+            },
+            "showteamdata": false,
+            "showuserdata": false,
+            "name": "mealslist",
+            "label": "Meals List",
+            "formDataRef": "Meals",
+            "formSchemaRef": {
+                "$oid": "64748211f83e8b005748777a"
+            },
+            "formSchemaRefID": "",
+            "homepagemenu": true,
+            "sections": [
+                {
+                    "_id": {
+                        "$oid": "6475f014442c3b5b80d6d427"
+                    },
+                    "position": {
+                        "$numberInt": "0"
+                    },
+                    "type": {
+                        "$numberInt": "9991"
+                    },
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685450772454"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685450772454"
+                        }
+                    },
+                    "columns": [
+                        {
+                            "_id": {
+                                "$oid": "6475f014442c3b5b80d6d428"
+                            },
+                            "position": {
+                                "$numberInt": "0"
+                            },
+                            "type": {
+                                "$numberInt": "0"
+                            },
+                            "label": "",
+                            "createdAt": {
+                                "$date": {
+                                    "$numberLong": "1685450772454"
+                                }
+                            },
+                            "updatedAt": {
+                                "$date": {
+                                    "$numberLong": "1685450772454"
+                                }
+                            },
+                            "shapes": [
+                                {
+                                    "_id": {
+                                        "$oid": "6475f014442c3b5b80d6d429"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "Meals",
+                                    "valuefield": "",
+                                    "position": {
+                                        "$numberInt": "0"
+                                    },
+                                    "label": "Meals",
+                                    "gridcols": [
+                                        {
+                                            "_id": {
+                                                "$oid": "6475f014442c3b5b80d6d42a"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "301"
+                                            },
+                                            "shapevalue": "name",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": true,
+                                            "validation": false,
+                                            "label": "Name",
+                                            "dataref": "",
+                                            "datarefid": "64748286f83e8b005748777e",
+                                            "valuefield": "",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "",
+                                            "editable": true,
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685450772453"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685450772453"
+                                                }
+                                            },
+                                            "formattype": {
+                                                "$numberInt": "4"
+                                            },
+                                            "redirectto": "6475f2d5442c3b5b80d6d4fb"
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "6475f014442c3b5b80d6d42b"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "301"
+                                            },
+                                            "shapevalue": "description",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": false,
+                                            "validation": false,
+                                            "label": "Description",
+                                            "dataref": "",
+                                            "datarefid": "64748292f83e8b0057487782",
+                                            "valuefield": "",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "",
+                                            "editable": true,
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685450772453"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685450772453"
+                                                }
+                                            },
+                                            "width": {
+                                                "$numberInt": "250"
+                                            }
+                                        }
+                                    ],
+                                    "hasdelete": true,
+                                    "hasnew": false,
+                                    "height": {
+                                        "$numberInt": "0"
+                                    },
+                                    "italic": false,
+                                    "layout": {
+                                        "$numberInt": "0"
+                                    },
+                                    "perpage": {
+                                        "$numberInt": "0"
+                                    },
+                                    "datarefid": "64748211f83e8b005748777a",
+                                    "editable": true,
+                                    "modifieduser": true,
+                                    "modifiedteam": false,
+                                    "modifieddate": true,
+                                    "font": "",
+                                    "grid": "Grid+++++",
+                                    "shapevalue": "Data Grid",
+                                    "type": {
+                                        "$numberInt": "50"
+                                    },
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685450772453"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685450772453"
+                                        }
+                                    },
+                                    "cascade": {
+                                        "fldname1": "name",
+                                        "fldname2": "mealname",
+                                        "fldid1": "",
+                                        "fldid2": "",
+                                        "val2": "",
+                                        "gridref": "6475f038442c3b5b80d6d43b",
+                                        "griddataref": "Meal Items"
+                                    }
+                                },
+                                {
+                                    "_id": {
+                                        "$oid": "6475f038442c3b5b80d6d43b"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "Meal Items",
+                                    "valuefield": "",
+                                    "position": {
+                                        "$numberInt": "1"
+                                    },
+                                    "label": "Meal Items",
+                                    "gridcols": [
+                                        {
+                                            "_id": {
+                                                "$oid": "6475f038442c3b5b80d6d43c"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "341"
+                                            },
+                                            "shapevalue": "mealname",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": true,
+                                            "validation": false,
+                                            "label": "Meal name",
+                                            "dataref": "Meals",
+                                            "datarefid": "64748300f83e8b005748778b",
+                                            "valuefield": "name",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "",
+                                            "editable": true,
+                                            "gridtofilter": "Meals",
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685450808569"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685450808569"
+                                                }
+                                            },
+                                            "formattype": {
+                                                "$numberInt": "3"
+                                            },
+                                            "popupform": false,
+                                            "redirectto": "6475f2d5442c3b5b80d6d4fb"
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "6475f038442c3b5b80d6d43d"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "341"
+                                            },
+                                            "shapevalue": "ingredientname",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": true,
+                                            "validation": false,
+                                            "label": "Ingredient name",
+                                            "dataref": "Ingredients",
+                                            "datarefid": "64748330f83e8b0057487790",
+                                            "valuefield": "name",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "",
+                                            "editable": true,
+                                            "gridtofilter": "Ingredients",
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685450808569"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685450808569"
+                                                }
+                                            },
+                                            "formattype": {
+                                                "$numberInt": "3"
+                                            },
+                                            "popupform": false,
+                                            "redirectto": "64751dc3fe67350057e30fed"
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "6475f038442c3b5b80d6d43f"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "342"
+                                            },
+                                            "shapevalue": "calories",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": false,
+                                            "validation": false,
+                                            "label": "Calories",
+                                            "dataref": "Ingredients",
+                                            "datarefid": "6474838af83e8b0057487796",
+                                            "valuefield": "ingredientname",
+                                            "relatedreflookup": "name",
+                                            "relatedrefcolumn": "calories",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "",
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685450808569"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685450808569"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "647a04bb27641e00576fdf2b"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "302"
+                                            },
+                                            "shapevalue": "wieght",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": false,
+                                            "validation": false,
+                                            "label": "Wieght",
+                                            "dataref": "",
+                                            "datarefid": "647a047027641e00576fdf0b",
+                                            "valuefield": "",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "",
+                                            "editable": true,
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685718204009"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685718204009"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "647a06533c9dcc55a506e560"
+                                            },
+                                            "datafield": [],
+                                            "label": "Wight Total",
+                                            "tablecolumn": false,
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "graphical": {
+                                                "opertype": {
+                                                    "$numberInt": "1"
+                                                },
+                                                "col1": "wieght",
+                                                "colstatic1": false,
+                                                "opr1": {
+                                                    "$numberInt": "4"
+                                                },
+                                                "col2": "quantity",
+                                                "colstatic2": false,
+                                                "opr2": "",
+                                                "col3": "",
+                                                "showbar": false,
+                                                "showsum": false
+                                            },
+                                            "type": {
+                                                "$numberInt": "303"
+                                            },
+                                            "validation": false,
+                                            "shapevalue": "Wight total ",
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685718272792"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685718272792"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "hasdelete": true,
+                                    "hasnew": false,
+                                    "height": {
+                                        "$numberInt": "0"
+                                    },
+                                    "italic": false,
+                                    "layout": {
+                                        "$numberInt": "0"
+                                    },
+                                    "perpage": {
+                                        "$numberInt": "0"
+                                    },
+                                    "datarefid": "647482e1f83e8b0057487786",
+                                    "editable": true,
+                                    "modifieduser": true,
+                                    "modifiedteam": false,
+                                    "modifieddate": false,
+                                    "font": "",
+                                    "grid": "Grid+++++",
+                                    "shapevalue": "Data Grid",
+                                    "type": {
+                                        "$numberInt": "50"
+                                    },
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685450808569"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685450808569"
+                                        }
+                                    },
+                                    "parentcol": "mealname",
+                                    "filters": [
+                                        {
+                                            "condition": {
+                                                "$numberInt": "1"
+                                            },
+                                            "operator": {
+                                                "$numberInt": "0"
+                                            },
+                                            "col": "",
+                                            "desc": false,
+                                            "oper": {
+                                                "$numberInt": "0"
+                                            },
+                                            "val1": "",
+                                            "val2": "",
+                                            "val1ref": ""
+                                        },
+                                        {
+                                            "condition": {
+                                                "$numberInt": "2"
+                                            },
+                                            "operator": {
+                                                "$numberInt": "0"
+                                            },
+                                            "col": "mealname",
+                                            "desc": false,
+                                            "oper": {
+                                                "$numberInt": "1"
+                                            },
+                                            "val1": "none",
+                                            "val2": "",
+                                            "val1ref": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "formula": "",
+            "t1": true,
+            "t2": false,
+            "t3": true,
+            "t4": false,
+            "t5": false,
+            "createdAt": {
+                "$date": {
+                    "$numberLong": "1685450743050"
+                }
+            },
+            "updatedAt": {
+                "$date": {
+                    "$numberLong": "1685718336743"
+                }
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6475f2d5442c3b5b80d6d4fb"
+            },
+            "showteamdata": false,
+            "showuserdata": false,
+            "name": "mealsform",
+            "label": "Meals Form",
+            "formDataRef": "Meals",
+            "formSchemaRef": {
+                "$oid": "64748211f83e8b005748777a"
+            },
+            "formSchemaRefID": "",
+            "homepagemenu": false,
+            "sections": [
+                {
+                    "_id": {
+                        "$oid": "6475f301442c3b5b80d6d509"
+                    },
+                    "position": {
+                        "$numberInt": "0"
+                    },
+                    "type": {
+                        "$numberInt": "9992"
+                    },
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685451521939"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685451521939"
+                        }
+                    },
+                    "columns": [
+                        {
+                            "_id": {
+                                "$oid": "6475f301442c3b5b80d6d50a"
+                            },
+                            "position": {
+                                "$numberInt": "0"
+                            },
+                            "type": {
+                                "$numberInt": "0"
+                            },
+                            "label": "",
+                            "createdAt": {
+                                "$date": {
+                                    "$numberLong": "1685451521939"
+                                }
+                            },
+                            "updatedAt": {
+                                "$date": {
+                                    "$numberLong": "1685451521939"
+                                }
+                            },
+                            "shapes": [
+                                {
+                                    "_id": {
+                                        "$oid": "6475f301442c3b5b80d6d50b"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "",
+                                    "valuefield": "",
+                                    "position": {
+                                        "$numberInt": "0"
+                                    },
+                                    "label": "Name",
+                                    "defaultvalue": "",
+                                    "multiline": false,
+                                    "required": true,
+                                    "validation": false,
+                                    "datafield": [],
+                                    "shapevalue": "name",
+                                    "type": {
+                                        "$numberInt": "301"
+                                    },
+                                    "gridcols": [],
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685451521939"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685451521939"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "_id": {
+                                "$oid": "6475f301442c3b5b80d6d50c"
+                            },
+                            "position": {
+                                "$numberInt": "1"
+                            },
+                            "type": {
+                                "$numberInt": "0"
+                            },
+                            "label": "",
+                            "createdAt": {
+                                "$date": {
+                                    "$numberLong": "1685451521939"
+                                }
+                            },
+                            "updatedAt": {
+                                "$date": {
+                                    "$numberLong": "1685451521939"
+                                }
+                            },
+                            "shapes": [
+                                {
+                                    "_id": {
+                                        "$oid": "6475f301442c3b5b80d6d50d"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "",
+                                    "valuefield": "",
+                                    "position": {
+                                        "$numberInt": "0"
+                                    },
+                                    "label": "Description",
+                                    "defaultvalue": "",
+                                    "multiline": false,
+                                    "required": false,
+                                    "validation": false,
+                                    "datafield": [],
+                                    "shapevalue": "description",
+                                    "type": {
+                                        "$numberInt": "301"
+                                    },
+                                    "gridcols": [],
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685451521939"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685451521939"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "_id": {
+                        "$oid": "6475f301442c3b5b80d6d50e"
+                    },
+                    "position": {
+                        "$numberInt": "1"
+                    },
+                    "type": {
+                        "$numberInt": "9991"
+                    },
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685451521939"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685451521939"
+                        }
+                    },
+                    "columns": [
+                        {
+                            "_id": {
+                                "$oid": "6475f301442c3b5b80d6d50f"
+                            },
+                            "position": {
+                                "$numberInt": "0"
+                            },
+                            "type": {
+                                "$numberInt": "0"
+                            },
+                            "label": "",
+                            "createdAt": {
+                                "$date": {
+                                    "$numberLong": "1685451521939"
+                                }
+                            },
+                            "updatedAt": {
+                                "$date": {
+                                    "$numberLong": "1685451521939"
+                                }
+                            },
+                            "shapes": [
+                                {
+                                    "_id": {
+                                        "$oid": "6475f301442c3b5b80d6d510"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "Meal Items",
+                                    "valuefield": "",
+                                    "position": {
+                                        "$numberInt": "0"
+                                    },
+                                    "label": "Meal Items",
+                                    "gridcols": [
+                                        {
+                                            "_id": {
+                                                "$oid": "6475f301442c3b5b80d6d511"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "341"
+                                            },
+                                            "shapevalue": "mealname",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": true,
+                                            "validation": false,
+                                            "label": "Meal name",
+                                            "dataref": "Meals",
+                                            "datarefid": "64748300f83e8b005748778b",
+                                            "valuefield": "name",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "",
+                                            "editable": true,
+                                            "gridtofilter": "",
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685451521939"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685451521939"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "6475f301442c3b5b80d6d512"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "341"
+                                            },
+                                            "shapevalue": "ingredientname",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": true,
+                                            "validation": false,
+                                            "label": "Ingredient name",
+                                            "dataref": "Ingredients",
+                                            "datarefid": "64748330f83e8b0057487790",
+                                            "valuefield": "name",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "",
+                                            "editable": true,
+                                            "gridtofilter": "",
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685451521939"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685451521939"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "6475f301442c3b5b80d6d513"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "302"
+                                            },
+                                            "shapevalue": "quantity",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": false,
+                                            "validation": false,
+                                            "label": "Quantity",
+                                            "dataref": "",
+                                            "datarefid": "6474839ef83e8b005748779a",
+                                            "valuefield": "",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "1",
+                                            "editable": true,
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685451521939"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685451521939"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "6475f301442c3b5b80d6d514"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "342"
+                                            },
+                                            "shapevalue": "calories",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": false,
+                                            "validation": false,
+                                            "label": "Calories",
+                                            "dataref": "Ingredients",
+                                            "datarefid": "6474838af83e8b0057487796",
+                                            "valuefield": "ingredientname",
+                                            "relatedreflookup": "name",
+                                            "relatedrefcolumn": "calories",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "",
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685451521939"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685451521939"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "hasdelete": true,
+                                    "hasnew": false,
+                                    "height": {
+                                        "$numberInt": "0"
+                                    },
+                                    "italic": false,
+                                    "layout": {
+                                        "$numberInt": "0"
+                                    },
+                                    "perpage": {
+                                        "$numberInt": "0"
+                                    },
+                                    "datarefid": "647482e1f83e8b0057487786",
+                                    "editable": true,
+                                    "modifieduser": false,
+                                    "modifiedteam": false,
+                                    "modifieddate": false,
+                                    "font": "",
+                                    "grid": "Grid+++++",
+                                    "shapevalue": "Data Grid",
+                                    "type": {
+                                        "$numberInt": "50"
+                                    },
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685451521939"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685451521939"
+                                        }
+                                    },
+                                    "parentcol": "mealname"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "formula": "",
+            "t1": true,
+            "t2": true,
+            "t3": false,
+            "t4": false,
+            "t5": false,
+            "createdAt": {
+                "$date": {
+                    "$numberLong": "1685451477949"
+                }
+            },
+            "updatedAt": {
+                "$date": {
+                    "$numberLong": "1685704062903"
+                }
+            }
+        },
+        {
+            "_id": {
+                "$oid": "64767a7c27641e00576fb780"
+            },
+            "showteamdata": false,
+            "showuserdata": false,
+            "name": "calendarlist",
+            "label": "Calendar List",
+            "formDataRef": "Calendar",
+            "formSchemaRef": {
+                "$oid": "64737282fbe1060057c0557e"
+            },
+            "formSchemaRefID": "",
+            "homepagemenu": true,
+            "sections": [
+                {
+                    "_id": {
+                        "$oid": "64767ab627641e00576fb791"
+                    },
+                    "position": {
+                        "$numberInt": "0"
+                    },
+                    "type": {
+                        "$numberInt": "9991"
+                    },
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685486262722"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685486262722"
+                        }
+                    },
+                    "columns": [
+                        {
+                            "_id": {
+                                "$oid": "64767ab627641e00576fb792"
+                            },
+                            "position": {
+                                "$numberInt": "0"
+                            },
+                            "type": {
+                                "$numberInt": "0"
+                            },
+                            "label": "",
+                            "createdAt": {
+                                "$date": {
+                                    "$numberLong": "1685486262722"
+                                }
+                            },
+                            "updatedAt": {
+                                "$date": {
+                                    "$numberLong": "1685486262722"
+                                }
+                            },
+                            "shapes": [
+                                {
+                                    "_id": {
+                                        "$oid": "64767ab627641e00576fb793"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "Calendar",
+                                    "valuefield": "",
+                                    "position": {
+                                        "$numberInt": "0"
+                                    },
+                                    "label": "Calendar",
+                                    "gridcols": [
+                                        {
+                                            "_id": {
+                                                "$oid": "64767ab627641e00576fb794"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "320"
+                                            },
+                                            "shapevalue": "date",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": true,
+                                            "validation": false,
+                                            "label": "Date",
+                                            "dataref": "",
+                                            "datarefid": "6473729ffbe1060057c05582",
+                                            "valuefield": "",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "#now",
+                                            "editable": true,
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685486262721"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685486262721"
+                                                }
+                                            },
+                                            "width": {
+                                                "$numberInt": "180"
+                                            }
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "64767ab627641e00576fb795"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "341"
+                                            },
+                                            "shapevalue": "breakfast",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": false,
+                                            "validation": false,
+                                            "label": "Breakfast",
+                                            "dataref": "Meals",
+                                            "datarefid": "64767a1e27641e00576fb763",
+                                            "valuefield": "name",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "",
+                                            "editable": true,
+                                            "formattype": {
+                                                "$numberInt": "3"
+                                            },
+                                            "popupform": false,
+                                            "redirectto": "6475eff7442c3b5b80d6d41f",
+                                            "gridtofilter": "",
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685486262721"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685486262721"
+                                                }
+                                            },
+                                            "width": {
+                                                "$numberInt": "180"
+                                            }
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "64767ab627641e00576fb796"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "341"
+                                            },
+                                            "shapevalue": "lunch",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": false,
+                                            "validation": false,
+                                            "label": "Lunch",
+                                            "dataref": "Meals",
+                                            "datarefid": "64767a4727641e00576fb770",
+                                            "valuefield": "name",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "",
+                                            "editable": true,
+                                            "formattype": {
+                                                "$numberInt": "3"
+                                            },
+                                            "popupform": false,
+                                            "redirectto": "6475eff7442c3b5b80d6d41f",
+                                            "gridtofilter": "",
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685486262721"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685486262721"
+                                                }
+                                            },
+                                            "width": {
+                                                "$numberInt": "178"
+                                            }
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "64767ab627641e00576fb797"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "341"
+                                            },
+                                            "shapevalue": "dinner",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": false,
+                                            "validation": false,
+                                            "label": "Dinner",
+                                            "dataref": "Meals",
+                                            "datarefid": "64767a5c27641e00576fb775",
+                                            "valuefield": "name",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "",
+                                            "editable": true,
+                                            "formattype": {
+                                                "$numberInt": "3"
+                                            },
+                                            "popupform": false,
+                                            "redirectto": "6475eff7442c3b5b80d6d41f",
+                                            "gridtofilter": "",
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685486262722"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685486262722"
+                                                }
+                                            },
+                                            "width": {
+                                                "$numberInt": "180"
+                                            }
+                                        },
+                                        {
+                                            "_id": {
+                                                "$oid": "6478a33c27641e00576fdab4"
+                                            },
+                                            "datafield": [],
+                                            "type": {
+                                                "$numberInt": "301"
+                                            },
+                                            "shapevalue": "details",
+                                            "texttype": {
+                                                "$numberInt": "1"
+                                            },
+                                            "multiline": false,
+                                            "required": false,
+                                            "validation": false,
+                                            "label": "Details",
+                                            "dataref": "",
+                                            "datarefid": "6478a31b27641e00576fda99",
+                                            "valuefield": "",
+                                            "tablecolumn": true,
+                                            "defaultvalue": "Details",
+                                            "formattype": {
+                                                "$numberInt": "4"
+                                            },
+                                            "redirectto": "6478a2a827641e00576fda64",
+                                            "width": {
+                                                "$numberInt": "110"
+                                            },
+                                            "createdAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685627708794"
+                                                }
+                                            },
+                                            "updatedAt": {
+                                                "$date": {
+                                                    "$numberLong": "1685627708794"
+                                                }
+                                            },
+                                            "editable": true
+                                        }
+                                    ],
+                                    "hasdelete": true,
+                                    "hasnew": false,
+                                    "height": {
+                                        "$numberInt": "0"
+                                    },
+                                    "italic": false,
+                                    "layout": {
+                                        "$numberInt": "0"
+                                    },
+                                    "perpage": {
+                                        "$numberInt": "0"
+                                    },
+                                    "datarefid": "64737282fbe1060057c0557e",
+                                    "editable": true,
+                                    "modifieduser": false,
+                                    "modifiedteam": false,
+                                    "modifieddate": false,
+                                    "font": "",
+                                    "grid": "Grid+++++",
+                                    "shapevalue": "Data Grid",
+                                    "type": {
+                                        "$numberInt": "50"
+                                    },
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685486262722"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685486262722"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "formula": "",
+            "t1": true,
+            "t2": true,
+            "t3": true,
+            "t4": false,
+            "t5": false,
+            "createdAt": {
+                "$date": {
+                    "$numberLong": "1685486204968"
+                }
+            },
+            "updatedAt": {
+                "$date": {
+                    "$numberLong": "1685627717784"
+                }
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6478a2a827641e00576fda64"
+            },
+            "showteamdata": false,
+            "showuserdata": false,
+            "name": "calendardetails",
+            "label": "Calendar Details",
+            "formDataRef": "Calendar",
+            "formSchemaRef": {
+                "$oid": "64737282fbe1060057c0557e"
+            },
+            "formSchemaRefID": "",
+            "homepagemenu": false,
+            "sections": [
+                {
+                    "_id": {
+                        "$oid": "6478a2d027641e00576fda79"
+                    },
+                    "position": {
+                        "$numberInt": "0"
+                    },
+                    "type": {
+                        "$numberInt": "9992"
+                    },
+                    "columns": [
+                        {
+                            "_id": {
+                                "$oid": "6478a2d027641e00576fda7a"
+                            },
+                            "position": {
+                                "$numberInt": "0"
+                            },
+                            "type": {
+                                "$numberInt": "0"
+                            },
+                            "label": "",
+                            "shapes": [
+                                {
+                                    "_id": {
+                                        "$oid": "6478a2d027641e00576fda7b"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "",
+                                    "valuefield": "",
+                                    "position": {
+                                        "$numberInt": "0"
+                                    },
+                                    "label": "Date",
+                                    "defaultvalue": "#now",
+                                    "datafield": [],
+                                    "required": true,
+                                    "validation": false,
+                                    "checked": false,
+                                    "shapevalue": "date",
+                                    "type": {
+                                        "$numberInt": "320"
+                                    },
+                                    "gridcols": [],
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685627600268"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685627600268"
+                                        }
+                                    }
+                                }
+                            ],
+                            "createdAt": {
+                                "$date": {
+                                    "$numberLong": "1685627600269"
+                                }
+                            },
+                            "updatedAt": {
+                                "$date": {
+                                    "$numberLong": "1685627600269"
+                                }
+                            }
+                        },
+                        {
+                            "_id": {
+                                "$oid": "6478a2d027641e00576fda7c"
+                            },
+                            "position": {
+                                "$numberInt": "1"
+                            },
+                            "type": {
+                                "$numberInt": "0"
+                            },
+                            "label": "",
+                            "shapes": [
+                                {
+                                    "_id": {
+                                        "$oid": "6478a2d027641e00576fda7d"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "",
+                                    "valuefield": "",
+                                    "position": {
+                                        "$numberInt": "0"
+                                    },
+                                    "label": "Quantity",
+                                    "defaultvalue": "",
+                                    "required": true,
+                                    "validation": false,
+                                    "datafield": [],
+                                    "shapevalue": "quantity",
+                                    "type": {
+                                        "$numberInt": "302"
+                                    },
+                                    "gridcols": [],
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685627600269"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685627600269"
+                                        }
+                                    }
+                                }
+                            ],
+                            "createdAt": {
+                                "$date": {
+                                    "$numberLong": "1685627600269"
+                                }
+                            },
+                            "updatedAt": {
+                                "$date": {
+                                    "$numberLong": "1685627600269"
+                                }
+                            }
+                        }
+                    ],
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685627600269"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685627600269"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "6478a2d027641e00576fda7e"
+                    },
+                    "position": {
+                        "$numberInt": "1"
+                    },
+                    "type": {
+                        "$numberInt": "9991"
+                    },
+                    "columns": [
+                        {
+                            "_id": {
+                                "$oid": "6478a2d027641e00576fda7f"
+                            },
+                            "position": {
+                                "$numberInt": "0"
+                            },
+                            "type": {
+                                "$numberInt": "0"
+                            },
+                            "label": "",
+                            "shapes": [
+                                {
+                                    "_id": {
+                                        "$oid": "6478a2d027641e00576fda80"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "Meals",
+                                    "valuefield": "name",
+                                    "position": {
+                                        "$numberInt": "0"
+                                    },
+                                    "label": "Breakfast",
+                                    "defaultvalue": "",
+                                    "datafield": "Meals",
+                                    "required": false,
+                                    "retainvalue": false,
+                                    "fieldtoshow": "",
+                                    "datarefid": "64748211f83e8b005748777a",
+                                    "fieldcondition": [],
+                                    "shapevalue": "breakfast",
+                                    "type": {
+                                        "$numberInt": "341"
+                                    },
+                                    "gridcols": [],
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685627600269"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685627600269"
+                                        }
+                                    }
+                                },
+                                {
+                                    "_id": {
+                                        "$oid": "6478a2d027641e00576fda81"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "Meals",
+                                    "valuefield": "name",
+                                    "position": {
+                                        "$numberInt": "1"
+                                    },
+                                    "label": "Lunch",
+                                    "defaultvalue": "",
+                                    "datafield": "Meals",
+                                    "required": false,
+                                    "retainvalue": false,
+                                    "fieldtoshow": "",
+                                    "datarefid": "64748211f83e8b005748777a",
+                                    "fieldcondition": [],
+                                    "shapevalue": "lunch",
+                                    "type": {
+                                        "$numberInt": "341"
+                                    },
+                                    "gridcols": [],
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685627600269"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685627600269"
+                                        }
+                                    }
+                                },
+                                {
+                                    "_id": {
+                                        "$oid": "6478a2d027641e00576fda82"
+                                    },
+                                    "texttype": {
+                                        "$numberInt": "1"
+                                    },
+                                    "dataref": "Meals",
+                                    "valuefield": "name",
+                                    "position": {
+                                        "$numberInt": "2"
+                                    },
+                                    "label": "Dinner",
+                                    "defaultvalue": "",
+                                    "datafield": "Meals",
+                                    "required": false,
+                                    "retainvalue": false,
+                                    "fieldtoshow": "",
+                                    "datarefid": "64748211f83e8b005748777a",
+                                    "fieldcondition": [],
+                                    "shapevalue": "dinner",
+                                    "type": {
+                                        "$numberInt": "341"
+                                    },
+                                    "gridcols": [],
+                                    "createdAt": {
+                                        "$date": {
+                                            "$numberLong": "1685627600269"
+                                        }
+                                    },
+                                    "updatedAt": {
+                                        "$date": {
+                                            "$numberLong": "1685627600269"
+                                        }
+                                    }
+                                }
+                            ],
+                            "createdAt": {
+                                "$date": {
+                                    "$numberLong": "1685627600269"
+                                }
+                            },
+                            "updatedAt": {
+                                "$date": {
+                                    "$numberLong": "1685627600269"
+                                }
+                            }
+                        }
+                    ],
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685627600277"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685627600277"
+                        }
+                    }
+                }
+            ],
+            "t1": true,
+            "t2": true,
+            "t3": true,
+            "t4": true,
+            "t5": false,
+            "createdAt": {
+                "$date": {
+                    "$numberLong": "1685627560805"
+                }
+            },
+            "updatedAt": {
+                "$date": {
+                    "$numberLong": "1685627600277"
+                }
+            }
+        }
+    ],
+    "apptables": [
+        {
+            "_id": {
+                "$oid": "64737282fbe1060057c0557e"
+            },
+            "active": true,
+            "type": {
+                "$numberInt": "1"
+            },
+            "name": "Calendar",
+            "teams": [],
+            "columns": [
+                {
+                    "_id": {
+                        "$oid": "6473729ffbe1060057c05582"
+                    },
+                    "type": {
+                        "$numberInt": "320"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": true,
+                    "validation": false,
+                    "valuefield": "",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "date",
+                    "label": "Date",
+                    "dataref": "",
+                    "datarefid": "",
+                    "defaultvalue": "#now",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685287583287"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685287583287"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "647372d1fbe1060057c0558b"
+                    },
+                    "type": {
+                        "$numberInt": "302"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": true,
+                    "validation": false,
+                    "valuefield": "",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "quantity",
+                    "label": "Quantity",
+                    "dataref": "",
+                    "datarefid": "",
+                    "defaultvalue": "",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685287633526"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685287633526"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "64767a1e27641e00576fb763"
+                    },
+                    "type": {
+                        "$numberInt": "341"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": false,
+                    "validation": false,
+                    "valuefield": "name",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "breakfast",
+                    "label": "Breakfast",
+                    "dataref": "Meals",
+                    "datarefid": "64748211f83e8b005748777a",
+                    "defaultvalue": "",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685486110897"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685486110897"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "64767a4727641e00576fb770"
+                    },
+                    "type": {
+                        "$numberInt": "341"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": false,
+                    "validation": false,
+                    "valuefield": "name",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "lunch",
+                    "label": "Lunch",
+                    "dataref": "Meals",
+                    "datarefid": "64748211f83e8b005748777a",
+                    "defaultvalue": "",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685486151051"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685486151051"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "64767a5c27641e00576fb775"
+                    },
+                    "type": {
+                        "$numberInt": "341"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": false,
+                    "validation": false,
+                    "valuefield": "name",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "dinner",
+                    "label": "Dinner",
+                    "dataref": "Meals",
+                    "datarefid": "64748211f83e8b005748777a",
+                    "defaultvalue": "",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685486172378"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685486172378"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "6478a31b27641e00576fda99"
+                    },
+                    "type": {
+                        "$numberInt": "301"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": false,
+                    "validation": false,
+                    "valuefield": "",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "details",
+                    "label": "Details",
+                    "dataref": "",
+                    "datarefid": "",
+                    "defaultvalue": "Details",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685627675364"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685627675364"
+                        }
+                    }
+                }
+            ],
+            "createdAt": {
+                "$date": {
+                    "$numberLong": "1685287554747"
+                }
+            },
+            "updatedAt": {
+                "$date": {
+                    "$numberLong": "1685627675365"
+                }
+            }
+        },
+        {
+            "_id": {
+                "$oid": "64747f49f83e8b005748774b"
+            },
+            "active": true,
+            "type": {
+                "$numberInt": "1"
+            },
+            "name": "Ingredients",
+            "teams": [],
+            "columns": [
+                {
+                    "_id": {
+                        "$oid": "64747f6cf83e8b005748774f"
+                    },
+                    "type": {
+                        "$numberInt": "301"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": true,
+                    "validation": false,
+                    "valuefield": "",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "name",
+                    "label": "Name",
+                    "dataref": "",
+                    "datarefid": "",
+                    "defaultvalue": "",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685356396239"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685356396239"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "64747f8bf83e8b0057487753"
+                    },
+                    "type": {
+                        "$numberInt": "301"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": false,
+                    "validation": false,
+                    "valuefield": "",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "code",
+                    "label": "Code",
+                    "dataref": "",
+                    "datarefid": "",
+                    "defaultvalue": "CD-",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685356427676"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685356427676"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "64748117f83e8b005748776b"
+                    },
+                    "type": {
+                        "$numberInt": "302"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": false,
+                    "validation": false,
+                    "valuefield": "",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "grams",
+                    "label": "Grams",
+                    "dataref": "",
+                    "datarefid": "",
+                    "defaultvalue": "100",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685356823381"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685356823381"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "6474c082af82340057fdb704"
+                    },
+                    "type": {
+                        "$numberInt": "302"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": false,
+                    "validation": false,
+                    "valuefield": "",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "carbohydrates",
+                    "label": "Carbohydrates",
+                    "dataref": "",
+                    "datarefid": "",
+                    "defaultvalue": "",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685373058905"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685373058905"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "6474c096af82340057fdb70d"
+                    },
+                    "type": {
+                        "$numberInt": "302"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": false,
+                    "validation": false,
+                    "valuefield": "",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "calories",
+                    "label": "Calories",
+                    "dataref": "",
+                    "datarefid": "",
+                    "defaultvalue": "",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685373078564"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685373078564"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "6474d60bd4afec00562297a6"
+                    },
+                    "type": {
+                        "$numberInt": "302"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": false,
+                    "validation": false,
+                    "valuefield": "",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "protein",
+                    "label": "Protein",
+                    "dataref": "",
+                    "datarefid": "",
+                    "defaultvalue": "",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685378571551"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685378571551"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "6474d618d4afec00562297ae"
+                    },
+                    "type": {
+                        "$numberInt": "302"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": false,
+                    "validation": false,
+                    "valuefield": "",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "fat",
+                    "label": "Fat",
+                    "dataref": "",
+                    "datarefid": "",
+                    "defaultvalue": "",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685378584103"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685378584103"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "6474d624d4afec00562297b6"
+                    },
+                    "type": {
+                        "$numberInt": "302"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": false,
+                    "validation": false,
+                    "valuefield": "",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "sugar",
+                    "label": "Sugar",
+                    "dataref": "",
+                    "datarefid": "",
+                    "defaultvalue": "",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685378596228"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685378596228"
+                        }
+                    }
+                }
+            ],
+            "createdAt": {
+                "$date": {
+                    "$numberLong": "1685356361156"
+                }
+            },
+            "updatedAt": {
+                "$date": {
+                    "$numberLong": "1685356361156"
+                }
+            }
+        },
+        {
+            "_id": {
+                "$oid": "64748211f83e8b005748777a"
+            },
+            "active": true,
+            "type": {
+                "$numberInt": "1"
+            },
+            "name": "Meals",
+            "teams": [],
+            "columns": [
+                {
+                    "_id": {
+                        "$oid": "64748286f83e8b005748777e"
+                    },
+                    "type": {
+                        "$numberInt": "301"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": true,
+                    "validation": false,
+                    "valuefield": "",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "name",
+                    "label": "Name",
+                    "dataref": "",
+                    "datarefid": "",
+                    "defaultvalue": "",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685357190333"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685357190333"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "64748292f83e8b0057487782"
+                    },
+                    "type": {
+                        "$numberInt": "301"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": false,
+                    "validation": false,
+                    "valuefield": "",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "description",
+                    "label": "Description",
+                    "dataref": "",
+                    "datarefid": "",
+                    "defaultvalue": "",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685357202334"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685357202334"
+                        }
+                    }
+                }
+            ],
+            "createdAt": {
+                "$date": {
+                    "$numberLong": "1685357073987"
+                }
+            },
+            "updatedAt": {
+                "$date": {
+                    "$numberLong": "1685357073987"
+                }
+            }
+        },
+        {
+            "_id": {
+                "$oid": "647482e1f83e8b0057487786"
+            },
+            "active": true,
+            "type": {
+                "$numberInt": "1"
+            },
+            "name": "Meal Items",
+            "teams": [],
+            "columns": [
+                {
+                    "_id": {
+                        "$oid": "64748300f83e8b005748778b"
+                    },
+                    "type": {
+                        "$numberInt": "341"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": true,
+                    "validation": false,
+                    "valuefield": "name",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "mealname",
+                    "label": "Meal name",
+                    "dataref": "Meals",
+                    "datarefid": "64748211f83e8b005748777a",
+                    "defaultvalue": "",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685357312842"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685357312842"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "64748330f83e8b0057487790"
+                    },
+                    "type": {
+                        "$numberInt": "341"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": true,
+                    "validation": false,
+                    "valuefield": "name",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "ingredientname",
+                    "label": "Ingredient name",
+                    "dataref": "Ingredients",
+                    "datarefid": "64747f49f83e8b005748774b",
+                    "defaultvalue": "",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685357360784"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685357360784"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "6474838af83e8b0057487796"
+                    },
+                    "type": {
+                        "$numberInt": "342"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": false,
+                    "validation": false,
+                    "valuefield": "ingredientname",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "calories",
+                    "label": "Calories",
+                    "dataref": "Ingredients",
+                    "datarefid": "64747f49f83e8b005748774b",
+                    "defaultvalue": "",
+                    "relatedreflookup": "name",
+                    "relatedrefcolumn": "calories",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685357450862"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685357450862"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "6474839ef83e8b005748779a"
+                    },
+                    "type": {
+                        "$numberInt": "302"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": false,
+                    "validation": false,
+                    "valuefield": "",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "quantity",
+                    "label": "Quantity",
+                    "dataref": "",
+                    "datarefid": "",
+                    "defaultvalue": "1",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685357470114"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685357470114"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "647a047027641e00576fdf0b"
+                    },
+                    "type": {
+                        "$numberInt": "302"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": false,
+                    "validation": false,
+                    "valuefield": "",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "wieght",
+                    "label": "Wieght",
+                    "dataref": "",
+                    "datarefid": "",
+                    "defaultvalue": "",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685718128295"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685718128295"
+                        }
+                    }
+                }
+            ],
+            "createdAt": {
+                "$date": {
+                    "$numberLong": "1685357281643"
+                }
+            },
+            "updatedAt": {
+                "$date": {
+                    "$numberLong": "1685718128296"
+                }
+            }
+        },
+        {
+            "_id": {
+                "$oid": "64748411f83e8b00574877a5"
+            },
+            "active": true,
+            "type": {
+                "$numberInt": "1"
+            },
+            "name": "Membership types",
+            "teams": [],
+            "columns": [
+                {
+                    "_id": {
+                        "$oid": "64748427f83e8b00574877a9"
+                    },
+                    "type": {
+                        "$numberInt": "301"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": true,
+                    "validation": false,
+                    "valuefield": "",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [],
+                    "shapevalue": "membershipname",
+                    "label": "Membership name",
+                    "dataref": "",
+                    "datarefid": "",
+                    "defaultvalue": "",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685357607117"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685357607117"
+                        }
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "64748453f83e8b00574877ad"
+                    },
+                    "type": {
+                        "$numberInt": "340"
+                    },
+                    "checked": false,
+                    "editable": false,
+                    "tablecolumn": true,
+                    "texttype": {
+                        "$numberInt": "1"
+                    },
+                    "multiline": false,
+                    "required": true,
+                    "validation": false,
+                    "valuefield": "",
+                    "fieldtoshow": "",
+                    "link": "",
+                    "linkmode": {
+                        "$numberInt": "0"
+                    },
+                    "dataorderid": {
+                        "$numberInt": "1"
+                    },
+                    "deleted": false,
+                    "datafield": [
+                        "Active",
+                        "Suspended"
+                    ],
+                    "shapevalue": "status",
+                    "label": "Status",
+                    "dataref": "",
+                    "datarefid": "",
+                    "defaultvalue": "Active",
+                    "createdAt": {
+                        "$date": {
+                            "$numberLong": "1685357651093"
+                        }
+                    },
+                    "updatedAt": {
+                        "$date": {
+                            "$numberLong": "1685357651093"
+                        }
+                    }
+                }
+            ],
+            "createdAt": {
+                "$date": {
+                    "$numberLong": "1685357585425"
+                }
+            },
+            "updatedAt": {
+                "$date": {
+                    "$numberLong": "1685357585425"
+                }
+            }
+        }
+    ],
+    "createdAt": {
+        "$date": {
+            "$numberLong": "1685287171101"
+        }
+    },
+    "updatedAt": {
+        "$date": {
+            "$numberLong": "1685718336761"
+        }
+    },
+    "startformid": {
+        "$oid": "64767a7c27641e00576fb780"
+    },
+    "startformname": "calendarlist"
+}
