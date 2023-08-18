@@ -50,20 +50,30 @@ export default function SiteSettings() {
   const [isKanbanEnabled, setIsKanbanEnabled] = useState(false)
   const [isTeamBoardEnabled, setIsTeamBoardEnabled] = useState(false)
   const [boardName, setBoardName] = useState("")
-  const [columns, setColumns] = useState([])
+  const [columns, setColumns] = useState(["To do", "Active", "Closed"])
   const token = localStorage.getItem("token")
+  const [isLoading, setIsLoading] = useState(true)
+
+  console.log(application)
+  useEffect(() => {
+    if (application === []) return
+    setIsKanbanEnabled(application?.kanban?.enabled)
+    setIsTeamBoardEnabled(application?.kanban?.teamboard)
+  }, [application])
 
   useEffect(() => {
     const getApplication = async () => {
       try {
         const res = await applicationApi.getOne(applicationId)
         dispatch(setApplication(res))
+        setIsLoading(false)
       } catch (err) {
         alert("@126--" + err)
+        setIsLoading(false)
       }
     }
     getApplication()
-  }, [applicationId])
+  }, [applicationId, dispatch])
 
   useEffect(() => {
     const getApplication = async () => {
@@ -85,19 +95,24 @@ export default function SiteSettings() {
   }, [apptables])
 
   const handleAddColumn = () => {
-    if (columns.length < 8) {
-      setColumns([...columns, ""])
-    } else {
+    if (columns.length >= 8) {
       alert("Maximum 8 columns allowed.")
+      return
     }
+    setColumns([...columns, ""])
   }
+
   const handleColumnNameChange = (index, newValue) => {
     const newColumns = [...columns]
-    newColumns[index] = newValue
+    newColumns[index] = newValue || ""
     setColumns(newColumns)
   }
 
   const handleDeleteColumn = index => {
+    if (columns.length <= 3) {
+      alert("Minimum 3 columns required.")
+      return
+    }
     const newColumns = [...columns]
     newColumns.splice(index, 1)
     setColumns(newColumns)
@@ -143,6 +158,86 @@ export default function SiteSettings() {
       alert("Error saving data.")
     }
   }
+
+  // useEffect(() => {
+  //   const fetchColumnsForBoard = async boardId => {
+  //     try {
+  //       const response = await fetch(
+  //         `https://dynaapi.azurewebsites.net/api/v1/boards/${boardId}/sections`,
+  //         {
+  //           method: "GET",
+  //           headers: {
+  //             Authorization: `Bearer ${token}`,
+  //           },
+  //         }
+  //       )
+
+  //       if (!response.ok) {
+  //         throw new Error("Failed to fetch columns")
+  //       }
+
+  //       return await response.json()
+  //     } catch (error) {
+  //       console.error("Error:", error.message)
+  //     }
+  //   }
+  //   const fetchData = async () => {
+  //     const fetchedColumns = await fetchColumnsForBoard(boardId) // замените `boardId` на актуальный ID вашей доски
+  //     setColumns(fetchedColumns)
+  //   }
+
+  //   fetchData()
+  // }, [])
+
+  const saveColumnToServer = async (boardId, dbName) => {
+    try {
+      const response = await fetch(
+        `https://dynaapi.azurewebsites.net/api/v1/boards/`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      )
+
+      if (!response.ok) {
+        throw new Error("Failed to save column")
+      }
+
+      const data = await response.json()
+      console.log("Column saved successfully:", data)
+    } catch (error) {
+      console.error("Error:", error.message)
+    }
+  }
+
+  const updateColumnTitle = async newTitle => {
+    try {
+      const response = await fetch(
+        `https://dynaapi.azurewebsites.net/api/v1/boards/64df6d0685d61c005ee93809/64ce9d1b75d853005b11b53d/sections/64df739485d61c005ee93854`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({ title: newTitle }),
+        }
+      )
+
+      if (!response.ok) {
+        throw new Error("Failed to update column title")
+      }
+
+      const data = await response.json()
+      console.log("Column updated successfully:", data)
+    } catch (error) {
+      console.error("Error:", error.message)
+    }
+  }
+
   const createBoard = async boardData => {
     try {
       const response = await fetch(
@@ -156,7 +251,9 @@ export default function SiteSettings() {
           body: JSON.stringify(boardData),
         }
       )
-      console.log(response)
+
+      const responseData = await response.json()
+      console.log(responseData)
     } catch (err) {
       console.error("Network error:", err)
       return null
@@ -164,18 +261,24 @@ export default function SiteSettings() {
   }
 
   const newBoardData = {
-    name: "New Board",
-    description: "This is a new board",
+    id: "64dccfb1388e8f0058ae76a7",
   }
+
+  if (isLoading) {
+    return <div>Loading...</div>
+  }
+
   return (
     <>
       <Box>
         <Box sx={{ padding: "10px 50px" }}>
-          <PagesHeader
-            name={application.name}
-            sitename={application.sitename}
-          ></PagesHeader>
-          <Divider></Divider>
+          {application && (
+            <PagesHeader
+              name={application?.name}
+              sitename={application?.sitename}
+            />
+          )}
+          <Divider />
           <center>
             <h3>Dynapage Setting Site</h3>
           </center>
@@ -234,6 +337,22 @@ export default function SiteSettings() {
                       >
                         <DeleteIcon />
                       </IconButton>
+                      <Button
+                        onClick={
+                          () =>
+                            saveColumnToServer(
+                              "64df7b5085d61c005ee9387f",
+                              "64dccfb1388e8f0058ae76a7"
+                            )
+                          // updateColumnTitle(column)
+                        }
+                        // onClick={() => console.log(column)}
+                        variant="contained"
+                        size="small"
+                        style={{ marginLeft: "10px" }}
+                      >
+                        Save Column
+                      </Button>
                     </ListItem>
                   ))}
               </List>
