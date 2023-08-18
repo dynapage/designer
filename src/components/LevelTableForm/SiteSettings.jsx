@@ -34,6 +34,7 @@ import applicationApi from "../../api/applicationApi"
 import { setColumns } from "../../redux/features/columnsSlice"
 import * as config from "../../config"
 import { setApplication } from "../../redux/features/applicationSlice"
+import SMTPsetting from "./SMTPsetting"
 
 export default function SiteSettings() {
   const dispatch = useDispatch()
@@ -368,6 +369,7 @@ export default function SiteSettings() {
               Save
             </Button>
           </center>
+          <SMTPsetting />
         </Box>
       </Box>
     </>
