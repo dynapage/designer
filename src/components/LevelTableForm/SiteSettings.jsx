@@ -284,6 +284,7 @@ export default function SiteSettings() {
       showSnackbar("Error saving data.")
     } finally {
       setIsSaving(false)
+      showSnackbar("Saved Successfully")
     }
   }
 
