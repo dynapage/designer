@@ -22,6 +22,7 @@ import {
   ListItem,
   IconButton,
   Button,
+  Snackbar,
 } from "@mui/material"
 import DeleteIcon from "@mui/icons-material/Delete"
 
@@ -42,7 +43,7 @@ export default function SiteSettings() {
   const { applicationId } = useParams()
   const { appId, appName, appSiteName, selectedTable, selectedForm } =
     location.state || {}
-
+  const [created, setCreated] = useState([])
   const application = useSelector(state => state.application.value)
   const { apptables } = application
   const { teams } = application
@@ -51,16 +52,18 @@ export default function SiteSettings() {
   const [isKanbanEnabled, setIsKanbanEnabled] = useState(false)
   const [isTeamBoardEnabled, setIsTeamBoardEnabled] = useState(false)
   const [boardName, setBoardName] = useState("")
-  const [columns, setColumns] = useState(["To do", "Active", "Closed"])
+  const [columns, setColumns] = useState([])
   const token = localStorage.getItem("token")
   const [isLoading, setIsLoading] = useState(true)
+  const [boards, setBoards] = useState([])
+  const [isSaving, setIsSaving] = useState(false)
+  const [openSnackbar, setOpenSnackbar] = useState(false)
+  const [snackbarMessage, setSnackbarMessage] = useState("")
 
-  console.log(application)
-  useEffect(() => {
-    if (application === []) return
-    setIsKanbanEnabled(application?.kanban?.enabled)
-    setIsTeamBoardEnabled(application?.kanban?.teamboard)
-  }, [application])
+  const showSnackbar = message => {
+    setSnackbarMessage(message)
+    setOpenSnackbar(true)
+  }
 
   useEffect(() => {
     const getApplication = async () => {
@@ -69,7 +72,7 @@ export default function SiteSettings() {
         dispatch(setApplication(res))
         setIsLoading(false)
       } catch (err) {
-        alert("@126--" + err)
+        showSnackbar("@126--" + err)
         setIsLoading(false)
       }
     }
@@ -81,11 +84,73 @@ export default function SiteSettings() {
       try {
         if (teams) setTeamsLoaded(true)
       } catch (err) {
-        alert("@138--" + err)
+        showSnackbar("@138--" + err)
       }
     }
     getApplication()
   }, [teams])
+
+  const fetchBoards = async () => {
+    try {
+      const response = await fetch(
+        `http://localhost:5000/api/v1/boards/${application.dbname}`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      )
+
+      if (!response.ok) {
+        throw new Error("Failed to fetch boards")
+      }
+
+      const data = await response.json()
+      setBoards(data)
+
+      if (data.length === 0) {
+        setColumns(["To do", "Active", "Closed"])
+      } else {
+        const firstBoardId = data[0]._id
+
+        const sectionsResponse = await fetch(
+          `http://localhost:5000/api/v1/boards/sections/${application.dbname}/all`,
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        )
+
+        if (!sectionsResponse.ok) {
+          throw new Error("Failed to fetch sections")
+        }
+
+        const sectionsData = await sectionsResponse.json()
+        const sectionsForFirstBoard = sectionsData.filter(
+          section => section.board === firstBoardId
+        )
+        const sectionNames = sectionsForFirstBoard.map(section => section.title)
+
+        setColumns(sectionNames)
+      }
+    } catch (error) {
+      console.error("Error:", error.message)
+    }
+  }
+
+  useEffect(() => {
+    if (application === []) return
+    console.log(application)
+
+    fetchBoards()
+  }, [application])
+
+  useEffect(() => {
+    if (application === []) return
+    setIsKanbanEnabled(application?.kanban?.enabled)
+    setIsTeamBoardEnabled(application?.kanban?.teamboard)
+  }, [application])
 
   useEffect(() => {
     if (apptables) {
@@ -97,7 +162,7 @@ export default function SiteSettings() {
 
   const handleAddColumn = () => {
     if (columns.length >= 8) {
-      alert("Maximum 8 columns allowed.")
+      showSnackbar("Maximum 8 columns allowed.")
       return
     }
     setColumns([...columns, ""])
@@ -111,7 +176,7 @@ export default function SiteSettings() {
 
   const handleDeleteColumn = index => {
     if (columns.length <= 3) {
-      alert("Minimum 3 columns required.")
+      showSnackbar("Minimum 3 columns required.")
       return
     }
     const newColumns = [...columns]
@@ -130,10 +195,10 @@ export default function SiteSettings() {
     setBoardName(event.target.value)
   }
 
-  const handleSaveChanges = async () => {
+  const handleSaveChangesApplicatin = async () => {
     try {
       const response = await fetch(
-        `https://dynaapi.azurewebsites.net/api/v1/application_save_changes/${applicationId}`,
+        `http://localhost:5000/api/v1/application_save_changes/${applicationId}`,
         {
           method: "PUT",
           headers: {
@@ -156,121 +221,135 @@ export default function SiteSettings() {
         console.log("Failed to save data:", responseData)
       }
     } catch (err) {
-      alert("Error saving data.")
+      showSnackbar("Error saving data.")
     }
   }
-
-  // useEffect(() => {
-  //   const fetchColumnsForBoard = async boardId => {
-  //     try {
-  //       const response = await fetch(
-  //         `https://dynaapi.azurewebsites.net/api/v1/boards/${boardId}/sections`,
-  //         {
-  //           method: "GET",
-  //           headers: {
-  //             Authorization: `Bearer ${token}`,
-  //           },
-  //         }
-  //       )
-
-  //       if (!response.ok) {
-  //         throw new Error("Failed to fetch columns")
-  //       }
-
-  //       return await response.json()
-  //     } catch (error) {
-  //       console.error("Error:", error.message)
-  //     }
-  //   }
-  //   const fetchData = async () => {
-  //     const fetchedColumns = await fetchColumnsForBoard(boardId) // замените `boardId` на актуальный ID вашей доски
-  //     setColumns(fetchedColumns)
-  //   }
-
-  //   fetchData()
-  // }, [])
-
-  const saveColumnToServer = async (boardId, dbName) => {
-    try {
-      const response = await fetch(
-        `https://dynaapi.azurewebsites.net/api/v1/boards/`,
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      )
-
-      if (!response.ok) {
-        throw new Error("Failed to save column")
-      }
-
-      const data = await response.json()
-      console.log("Column saved successfully:", data)
-    } catch (error) {
-      console.error("Error:", error.message)
-    }
-  }
-
-  const updateColumnTitle = async newTitle => {
-    try {
-      const response = await fetch(
-        `https://dynaapi.azurewebsites.net/api/v1/boards/64df6d0685d61c005ee93809/64ce9d1b75d853005b11b53d/sections/64df739485d61c005ee93854`,
-        {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-          body: JSON.stringify({ title: newTitle }),
-        }
-      )
-
-      if (!response.ok) {
-        throw new Error("Failed to update column title")
-      }
-
-      const data = await response.json()
-      console.log("Column updated successfully:", data)
-    } catch (error) {
-      console.error("Error:", error.message)
-    }
-  }
-
   const createBoard = async boardData => {
     try {
-      const response = await fetch(
-        "https://dynaapi.azurewebsites.net/api/v1/boards",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-          body: JSON.stringify(boardData),
-        }
-      )
+      const response = await fetch("http://localhost:5000/api/v1/boards", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify(boardData),
+      })
 
       const responseData = await response.json()
-      console.log(responseData)
+      for (let column of columns) {
+        await createSection(responseData.id, column)
+      }
     } catch (err) {
       console.error("Network error:", err)
       return null
     }
   }
 
-  const newBoardData = {
-    id: "64dccfb1388e8f0058ae76a7",
+  const createBoardsForAllTeams = async () => {
+    for (let team of application.teams) {
+      const newBoardData = {
+        team: [team._id],
+        dbName: application.dbname,
+        title: boardName,
+      }
+      await createBoard(newBoardData)
+    }
+  }
+
+  const createSingleBoardForAllTeams = async () => {
+    const allTeamIds = application.teams.map(team => team._id)
+    const newBoardData = {
+      team: allTeamIds,
+      dbName: application.dbname,
+      title: boardName,
+    }
+    await createBoard(newBoardData)
+  }
+
+  const handleSaveChanges = async () => {
+    setIsSaving(true)
+    try {
+      await handleSaveChangesApplicatin()
+      if (!isKanbanEnabled) return
+      if (boards.length === 0 || isSaving) {
+        if (isTeamBoardEnabled) {
+          await createBoardsForAllTeams()
+        } else {
+          await createSingleBoardForAllTeams()
+        }
+      }
+      showSnackbar("Saved Successfully")
+      fetchBoards()
+    } catch (err) {
+      showSnackbar("Error saving data.")
+    } finally {
+      setIsSaving(false)
+    }
   }
 
   if (isLoading) {
-    return <div>Loading...</div>
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "90vh",
+        }}
+      >
+        <CircularProgress size={45} />
+      </div>
+    )
+  }
+
+  const createSection = async (board, column) => {
+    console.log(column)
+    const url = "http://localhost:5000/api/v1/boards/sections/"
+    const data = {
+      dbName: application.dbname,
+      board: board,
+      title: column,
+    }
+
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify(data),
+      })
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`)
+      }
+
+      const result = await response.json()
+      console.log(result)
+    } catch (error) {
+      console.error("Error creating section:", error)
+    }
   }
 
   return (
     <>
+      <Snackbar
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+        open={openSnackbar}
+        autoHideDuration={6000}
+        onClose={() => setOpenSnackbar(false)}
+        message={snackbarMessage}
+        action={
+          <Button
+            color="secondary"
+            size="small"
+            onClick={() => setOpenSnackbar(false)}
+          >
+            Close
+          </Button>
+        }
+      />
       <Box>
         <Box sx={{ padding: "10px 50px" }}>
           {application && (
@@ -294,7 +373,15 @@ export default function SiteSettings() {
           />
           {isKanbanEnabled && (
             <>
+              {boards.length > 0 && (
+                <center>
+                  <h3>
+                    Board{boards.length > 1 ? "s" : ""} {boards[0].title}
+                  </h3>
+                </center>
+              )}
               <TextField
+                disabled={boards.length > 0}
                 label="Name of the Board"
                 value={boardName}
                 onChange={handleBoardNameChange}
@@ -305,16 +392,18 @@ export default function SiteSettings() {
               <FormControlLabel
                 control={
                   <Checkbox
+                    disabled={boards.length > 0}
                     checked={isTeamBoardEnabled}
                     onChange={handleTeamBoardToggle}
                   />
                 }
-                label="Enable a Board for Each Team"
+                label="Enable Individual Team Boards"
               />
               <h4>Columns</h4>
               <Button
                 onClick={handleAddColumn}
                 variant="contained"
+                disabled={boards.length > 0}
                 size="small"
               >
                 Add Column
@@ -324,6 +413,7 @@ export default function SiteSettings() {
                   columns.map((column, index) => (
                     <ListItem key={index}>
                       <TextField
+                        disabled={boards.length > 0}
                         label={`Column ${index + 1} Name`}
                         value={column}
                         onChange={e =>
@@ -334,26 +424,11 @@ export default function SiteSettings() {
                       />
                       <IconButton
                         edge="end"
+                        disabled={boards.length > 0}
                         onClick={() => handleDeleteColumn(index)}
                       >
                         <DeleteIcon />
                       </IconButton>
-                      <Button
-                        onClick={
-                          () =>
-                            saveColumnToServer(
-                              "64df7b5085d61c005ee9387f",
-                              "64dccfb1388e8f0058ae76a7"
-                            )
-                          // updateColumnTitle(column)
-                        }
-                        // onClick={() => console.log(column)}
-                        variant="contained"
-                        size="small"
-                        style={{ marginLeft: "10px" }}
-                      >
-                        Save Column
-                      </Button>
                     </ListItem>
                   ))}
               </List>
@@ -361,12 +436,12 @@ export default function SiteSettings() {
           )}
           <center>
             <Button
-              // onClick={() => createBoard(newBoardData)}
               onClick={handleSaveChanges}
               variant="contained"
               color="primary"
+              disabled={isSaving}
             >
-              Save
+              {isSaving ? <CircularProgress size={24} /> : "Save"}
             </Button>
           </center>
           <SMTPsetting />
