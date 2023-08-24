@@ -17,7 +17,7 @@ import FormGrid from "./components/LevelTableForm/FormGrid"
 import SectionEditor from "./components/SectionEditor"
 import Signup from "./pages/Signup"
 import Login from "./pages/Login"
-import SiteSettings from "./components/LevelTableForm/SiteSettings"
+import SiteSettings from "./components/LevelTableForm/SiteSetting/SiteSettings"
 
 function App({ params }) {
   const userTheme = localStorage.getItem("userTheme")
