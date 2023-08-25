@@ -17,7 +17,6 @@ export default function ColumnsManagerEdit({ showSnackbar, boardId, boards }) {
   const { dbname } = useSelector(state => state.application.value)
 
   useEffect(() => {
-    console.log(boards)
     const fetchColumns = async () => {
       try {
         const response = await fetch(
