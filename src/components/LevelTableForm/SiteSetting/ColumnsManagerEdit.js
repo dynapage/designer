@@ -11,11 +11,13 @@ import DeleteIcon from "@mui/icons-material/Delete"
 import { useSelector } from "react-redux"
 import { handleDeleteColumn } from "./siteSettingsHelpers"
 
-export default function ColumnsManagerEdit({ showSnackbar, boardId }) {
+export default function ColumnsManagerEdit({ showSnackbar, boardId, boards }) {
   const [columns, setColumns] = useState([])
   const token = localStorage.getItem("token")
   const { dbname } = useSelector(state => state.application.value)
+
   useEffect(() => {
+    console.log(boards)
     const fetchColumns = async () => {
       try {
         const response = await fetch(
@@ -37,8 +39,8 @@ export default function ColumnsManagerEdit({ showSnackbar, boardId }) {
       }
     }
     fetchColumns()
-  }, [])
-  console.log(columns)
+  }, [boards])
+
   const handleUpdated = async () => {
     try {
       const response = await fetch(
@@ -56,8 +58,6 @@ export default function ColumnsManagerEdit({ showSnackbar, boardId }) {
         }
       )
       if (response.ok) {
-        const data = await response.json()
-        console.log(data)
         showSnackbar("Successfully updated columns!")
       } else {
         showSnackbar("Error updating columns")

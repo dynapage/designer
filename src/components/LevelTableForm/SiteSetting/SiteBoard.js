@@ -57,7 +57,6 @@ export default function EditDescription({
       )
       const responseData = await response.json()
       if (response.ok) {
-        console.log(responseData)
         showSnackbar("Updated")
       } else {
         console.error("Failed to update section:", responseData)
@@ -217,6 +216,7 @@ export default function EditDescription({
               <AccordionDetails>
                 <ColumnsManagerEdit
                   boardId={item.id}
+                  boards={boards}
                   showSnackbar={showSnackbar}
                 />
               </AccordionDetails>
