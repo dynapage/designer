@@ -20,6 +20,7 @@ import CancelIcon from "@mui/icons-material/Close"
 import DeleteIcon from "@mui/icons-material/DeleteOutlined"
 import applicationApi from "../../api/applicationApi"
 import { setApplication } from "../../redux/features/applicationSlice"
+import authApi from '../../api/authApi'
 
 function randStr(len, chars = "abcdefghklmnysABCDEFJHKLMNYT0123456789") {
   let s = ""
@@ -67,8 +68,8 @@ export default function UsersGrid({ selectedteam }) {
   const varyo = useSelector(state =>
     state.application.value
       ? state.application.value.teams.find(
-          ({ _id }) => _id === selectedteam._id
-        )
+        ({ _id }) => _id === selectedteam._id
+      )
       : selectedteam
   )
   const [rowModesModel, setRowModesModel] = React.useState({})
@@ -182,6 +183,10 @@ export default function UsersGrid({ selectedteam }) {
         let rowToInsert = { ...newRow }
         delete rowToInsert._id
         delete rowToInsert.isNew
+        let signupIntenalUser = { name: rowToInsert.username, username: rowToInsert.userId, password: rowToInsert.userpwd, confirmPassword: rowToInsert.userpwd, usersite: dbApp.sitename, appid: selectedApp._id, teamid: selectedteam._id, }
+        console.log(' --rowToInsert   ', rowToInsert);
+        const resauth = await authApi.signup(signupIntenalUser)
+       
         const res = await applicationApi.createUser(
           selectedApp._id,
           selectedteam._id,
@@ -223,6 +228,7 @@ export default function UsersGrid({ selectedteam }) {
         selectedteam._id,
         id
       )
+      
       dispatch(setApplication(res))
     }
   }
