@@ -155,9 +155,9 @@ function BoardsManager({
 
   return (
     <>
-      <h3>Create Board</h3>
+      <h3>Kanban Board</h3>
       <FormControl component="fieldset" margin="normal">
-        <FormLabel component="legend">Board Type</FormLabel>
+        <FormLabel component="legend">Select Board Type</FormLabel>
         <RadioGroup
           value={String(isTeamBoardEnabled)}
           onChange={() => {
@@ -170,20 +170,18 @@ function BoardsManager({
           <FormControlLabel
             value="false"
             control={<Radio />}
-            label="Common Board for Teams"
+            label="A shared board accessible to all users across the entire site."
           />
           <FormControlLabel
             value="true"
             control={<Radio />}
-            label="Separate Board for Each Team"
+            label="A board dedicated to each team (each team has access to its respective board)."
           />
         </RadioGroup>
       </FormControl>
       {!isTeamBoardEnabled && (
         <Accordion expanded TransitionProps={{ unmountOnExit: true }}>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Setting Board for Teams</Typography>
-          </AccordionSummary>
+          
           <AccordionDetails>
             <BoardColumnsManager
               board={boards[0]}
@@ -203,7 +201,7 @@ function BoardsManager({
             TransitionProps={{ unmountOnExit: true }}
           >
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography>Setting Board for {team.teamName}</Typography>
+              <Typography>{team.teamName} board</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <BoardColumnsManager

@@ -7,6 +7,8 @@ import {
   Divider,
   Switch,
   Typography,
+  FormControl,
+  FormControlLabel 
 } from "@mui/material"
 import PagesHeader from "../../basics/PagesHeader"
 import applicationApi from "../../../api/applicationApi"
@@ -143,16 +145,24 @@ export default function SiteSettings() {
           )}
           <Divider />
           <center>
-            <Typography variant="h6">Dynapage Setting Site</Typography>
+            <Typography variant="h6">Dynapage Site Settings..</Typography>
           </center>
-          <Switch
+          
+
+<FormControlLabel
+          control={
+            <Switch size="small" 
             checked={isKanbanEnabled}
             onChange={() => {
               const newIsKanbanEnabled = !isKanbanEnabled
               setIsKanbanEnabled(newIsKanbanEnabled)
               handleSaveChangesApplicatin(newIsKanbanEnabled)
             }}
-          />
+          ></Switch>
+          }
+          label="Enable Kanban Board for this site"
+        />
+
           {isKanbanEnabled && boards.length === 0 && (
             <BoardsManager
               isTeamBoardEnabled={isTeamBoardEnabled}
