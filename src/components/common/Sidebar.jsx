@@ -171,7 +171,7 @@ const Sidebar = ({ themeMode }) => {
                   sx={{
                     pl: 4,
                     pl: "30px",
-                    cursor: "grab",
+                    cursor: "pointer!important",
                   }}
                 >
                   <ListItemText primary="Site tables" />
@@ -184,7 +184,7 @@ const Sidebar = ({ themeMode }) => {
                   sx={{
                     pl: 4,
                     pl: "30px",
-                    cursor: "grab",
+                    cursor: "pointer!important",
                   }}
                 >
                   <ListItemText primary="Forms" />
@@ -197,10 +197,10 @@ const Sidebar = ({ themeMode }) => {
                   sx={{
                     pl: 4,
                     pl: "30px",
-                    cursor: "grab",
+                    cursor: "pointer!important",
                   }}
                 >
-                  <ListItemText primary="Setting site" />
+                  <ListItemText primary="Site settings" />
                 </ListItemButton>
               </List>
             </Box>
